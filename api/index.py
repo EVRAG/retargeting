@@ -22,6 +22,3 @@ def process_image():
     except Exception as e:
         print(e)
         return jsonify({'error': 'Внутренняя ошибка сервера'}), 500
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3002)
